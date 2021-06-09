@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and backgrounds</title>
+    <style>
+        #firstPara{
+            background-color: greenyellow;
+            height: 100px;
+            width: 140px;
+            border-width: 4px;
+            border-style: solid;
+            border-color: red;
+            border-radius: 10px;/*this is used to give rounded corners*/
+        }
+        #secondPara{
+            background-color: seagreen;
+            height: 100px;
+            width: 455px;
+            border-top: 10px solid violet;/*this is used to give only the top border of the box*/
+            border-right: 8px solid rgb(130, 238, 144);
+            border-bottom: 6px solid rgb(238, 130, 135);
+            border-left: 8px solid rgb(221, 105, 38);
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 10px;
+        }
+        #thirdPara{
+            height: 110px;
+            width: 455px;
+            background-image: url('https://codewithharry.com/static/home/img/photo.png');
+            border:2px solid red;
+            background-repeat: repeat-x;/*repeat x matlab bus x axis ke along hi repeat hogi*/
+        }
+        #fourthPara{
+            height: 1100px;
+            width: 455px;
+            background-image: url('https://codewithharry.com/static/home/img/photo.png');
+            border:2px solid red;
+            background-repeat: no-repeat;/*no repeat matlab image repeat nahi  hogi*/
+            background-position: center;/*image center mey aa jayegi*/
+            /*position agar center top kar denge to top mey center par aa jayega image*/
+        }
+        #fifthPara{
+            height: 1100px;
+            width: 455px;
+            background-image: url('https://codewithharry.com/static/home/img/photo.png');
+            border:2px solid red;
+            background-repeat: no-repeat;/*no repeat matlab image repeat nahi  hogi*/
+            background-position: 192px top;/*top se 192 px sid eho jayegi*/
+            /*ya phir coordinates bhi de sakte hai jaise background position:192px 33px*/
+        }
+    </style>
+</head>
+<body>
+    <h3>this is heading</h3>
+    <p id="firstPara">this is a paragraph</p>
+
+    <h3>this is second  heading</h3>
+    <p id="secondPara">this is a second paragraph</p>
+
+    <h3>this is third  heading</h3>
+    <p id="thirdPara">this is a third paragraph</p>
+
+    <h3>this is fourth  heading</h3>
+    <p id="fourthPara">this is a fourth paragraph</p>
+
+    <h3>this is fifth  heading</h3>
+    <p id="fifthPara">this is a fifth paragraph</p>
+</body>
+</html>

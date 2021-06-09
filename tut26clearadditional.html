@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.google.com/specimen/Ubuntu+Mono#standard-styles" rel="stylesheet">
+    <style>
+        *{
+             box-sizing: border-box;
+        }
+        body{
+            font-family: 'Ubuntu',sans-serif;
+            
+        }
+      .container{
+          width: 900px;
+          border:3px solid purple;
+          margin: 33px auto;
+          background-color: rgb(106, 141, 50);
+
+      }
+      .item{
+        border:3px solid red;
+        margin:12px 3px;
+        padding:12px 3px;
+        background-color:cadetblue;
+
+      }
+      #fruit{
+          float:left;/*main thing........agar yahan par float:right kar denge to fruits wala box right mey aa jayega*/
+          width:48%;
+
+      }
+      #computer{
+        float:left;/*main thing*/
+          width:48%;
+
+      }
+      #stationary{
+        clear:both;
+          width:98%;/*isme left wala element override kar raha hai.agar hum chahate ahi ki left wala element override nahi kare to clear:left likhana padega.same right wale ke liye bhi hoga...agar hum chahate hai ki koi bhi element override nahi kare to clear:both likhana padega...jo li hum next wale mey dekhenge */
+
+      }
+      p,h1{
+        text-align: right;
+        text-align: center;/*baad mey likane par override ho jata hai*/
+
+      }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 >Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>fruits</h3>
+            <p id="fruitpara" class="para">Lorem Lorem34ipsum dolor sit amet consectetur adipisicing elit. Facere aliquid officiis nesciunt? Consequatur voluptas vel perferendis blanditiis quas, tempora, odio, voluptatum quis pariatur recusandae itaque expedita accusantium nisi reiciendis voluptatibus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis error perferendis ullam magnam modi ipsum nam vitae voluptas corporis cupiditate et, delectus iste deserunt odio ratione, assumenda hic qui ea, deleniti provident. Corporis, veniam.</p>
+        </div>
+        
+            <div id="computer" class="item">
+                <h3>computer</h3>
+                <p id="computerpara" class="para">Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, iste nihil. Accusantium, mollitia illo. Natus amet dicta et, nisi repellat deserunt architecto maxime quaerat mollitia, itaque nulla laboriosam numquam, nobis aperiam corrupti voluptatibus. Iure.ipsum dolor sit amet consectetur adipisicing elit. Aliquam unde fugiat facilis sint! Nihil laborum reprehenderit ipsam suscipit? Molestias ut perferendis quam consequuntur nesciunt quaerat iusto dicta nobis eos autem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quos voluptas animi doloremque reiciendis autem fuga, aliquid officiis deleniti nihil, recusandae sint odio natus sunt soluta molestias nulla quam ut quia eum corrupti illo quis!Lorem45 Lorem ipsum dolor sit amet consectetur adipisicing 
+
+            
+                </p>
+            </div>
+            
+                <div id="stationary" class="item">
+                    <h3>stationary</h3>
+                    <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cupiditate neque quidem iure aperiam quia officiis eveniet reiciendis error optio consequatur quo laboriosam adipisci voluptas odio, itaque cum molestias. Voluptates!</p>
+                </div>
+                <div id="glasses" class="item">
+                    <h3>glasses</h3>
+                    <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cupiditate neque quidem iure aperiam quia officiis eveniet reiciendis error optio consequatur quo laboriosam adipisci voluptas odio, itaque cum molestias. Voluptates!</p>
+                </div>
+    </div>
+</body>
+</html>

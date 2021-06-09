@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{/*ye universal hota hai ...baad mey iske value ko overwritw karke change kar sakte hai*/
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        body{
+          background-color: #e6cbf8;
+        }
+      .container{
+          background-color: rgb(224, 122, 97);
+          border: 3px solid rgb(64, 6, 119);
+          padding:50px;/*iss econtent andar hi andar simaat jayega matlab between mey concentrate hote jayega*/
+          margin:34px;/*it gives gaps between the boxes*/
+      }
+      .containers{
+          background-color: rgb(175, 134, 80);
+          border: 3px solid rgb(64, 6, 119);
+          padding-top:79px;
+          padding-right: 34px;/*padding/margin left ,right, top, bottom bhi hota hai*/
+          margin:34px;
+      }
+      .containerss{
+          background-color: rgb(156, 103, 143);
+          border: 3px solid rgb(64, 6, 119);
+          padding: 23px 56px 6px 78px;/*padding=top right bottom left*/
+          margin:34px;
+          width:250px;
+          border-radius: 23px;/*isme padding ya margin karne se box ka width ghatega bhadhega*/
+          box-sizing: border-box;/*isse box ka width wahi rahega.padding margin dalne se box apna width adjust kar lega*/
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h3>Box Model</h3>
+    <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae laborum nesciunt error accusamus, saepe dolore, eius maxime aut inventore quibusdam eos id sint!</p>
+    </div>
+
+    <div class="containers">
+        <h3>Box Model</h3>
+        <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae laborum nesciunt error accusamus, saepe dolore, eius maxime aut inventore quibusdam eos id sint!</p>
+        </div>
+
+        <div class="containerss">
+            <h3>Box Model</h3>
+            <p id="third">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae laborum nesciunt error accusamus, saepe dolore, eius maxime aut inventore quibusdam eos id sint!</p>
+            </div>
+</body>
+</html>
